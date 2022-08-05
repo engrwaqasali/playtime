@@ -1,0 +1,44 @@
+@import '../../../assets/styles/vars';
+
+.PrizeCreatePromoCodeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 10px;
+
+    &-Inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &-Input {
+        padding-left: 10px;
+        margin: 10px;
+        height: 40px;
+        background: #222731;
+        border: none;
+        color: white;
+
+        &_error {
+            outline-color: $color-red !important;
+
+            &::placeholder {
+                color: $color-red;
+            }
+        }
+    }
+
+    button {
+        margin-top: 5px;
+        height: 44px;
+        background: #4986f5;
+        width: 50%;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+}

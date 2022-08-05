@@ -1,0 +1,15 @@
+
+.TextIcon {
+    & &-Text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    & &-Icon {
+        margin-left: 8px;
+
+        &_noGap {
+            margin-left: 0;
+        }
+    }
+}

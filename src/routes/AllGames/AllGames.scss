@@ -1,0 +1,60 @@
+
+.AllGames {
+    &-Row {
+        display: flex;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        color: red;
+
+        .AllGames-Game:nth-child(n+3) a{
+            opacity: 0.2;
+            cursor: url(/coming-soon.svg), url(/coming-soon.cur), default;
+        }
+    }
+
+    &-BetsPanel.Panel { height: 100%; }
+
+    &-BetsTitle.Text,
+    &-HistoryTitle.Text { padding-left: 13px; }
+
+    &-Game {
+        display: flex;
+        flex: 0 0 33%;
+        padding: 5px;     
+        
+        & .Link {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            min-height: 170px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+
+    }
+
+    &-Title {
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        z-index: 98;
+        bottom: 0;
+        left: 10px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        &-Game {
+            flex: 0 0 25%;   
+        }
+    }
+
+    @media only screen and (min-width: 1600px) {
+        &-Game {
+            flex: 0 0 20%;   
+        }
+    }
+}

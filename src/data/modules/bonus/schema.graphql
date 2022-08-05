@@ -1,0 +1,11 @@
+
+type Query {
+    hasBonus: Boolean!
+}
+
+type Mutation {
+    getBonus: Float!
+
+    usePromoCode(promoCode: String!): String!
+    createPromoCode(promoCode: String!, amount: Int!, maxUses: Int!): String!
+}
